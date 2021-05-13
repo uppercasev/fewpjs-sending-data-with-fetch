@@ -10,7 +10,7 @@
 
 If you think about it, `fetch()` is a little browser in your browser. You tell
 `fetch()` to go to a URL by passing it an argument, e.g.
-`fetch("https://flatironschool.com")`, and it makes a network request. You
+`fetch("https://academyxi.com")`, and it makes a network request. You
 chain calls to `fetch()` with `then()`. Each `then()` call takes a callback
 function as its argument. Based on actions in the callback function, we can
 display or update content in the DOM.
