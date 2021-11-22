@@ -12,5 +12,13 @@ function submitData(nameString, emailString) {
         },
         body: JSON.stringify(formData)
     };
-    return fetch('http://localhost:3000/users', postObj);
+
+    return fetch('http://localhost:3000/users', postObj)
+    .then((response) => response.json())
+    .then((object) => {
+        document.querySelector('body').innerHTML += `<p>${object.id}</p>`;
+    })
+    .catch((reason) => {
+        document.querySelector('body').innerHTML += `<p>${reason}</p>`;
+    });
 }
